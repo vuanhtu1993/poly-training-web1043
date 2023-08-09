@@ -1,0 +1,10 @@
+@import url('./slide.css');
+@import url('./timer.css');
+
+body {
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.flex {
+    display: flex;
+}

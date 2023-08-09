@@ -1,0 +1,48 @@
+.timer {
+    width: 60%;
+    margin: auto;
+    gap: 40px
+}
+.day {
+    text-align: center;
+    font-size: 80px;
+    min-width: 60px;
+    min-width: 120px;
+}
+.day span {
+    display: block;
+    font-size: medium;
+}
+
+.hour {
+    text-align: center;
+    font-size: 80px;
+    min-width: 120px;
+}
+
+.hour span {
+    display: block;
+    font-size: medium;
+}
+
+.minute {
+    text-align: center;
+    font-size: 80px;
+    min-width: 120px;
+}
+
+.minute span {
+    display: block;
+    font-size: medium;
+}
+
+.second {
+    text-align: center;
+    font-size: 80px;
+    min-width: 120px;
+}
+
+.second span {
+    display: block;
+    font-size: medium;
+}
