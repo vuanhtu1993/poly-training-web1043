@@ -1,4 +1,4 @@
-const app2 = document.querySelector("#timer")
+const app2 = document.querySelector("#app2")
 const input = document.querySelector("#timer-input")
 
 const second = 1000,

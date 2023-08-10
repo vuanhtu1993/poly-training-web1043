@@ -1,4 +1,4 @@
-const app1 = document.querySelector("#slider");
+const app1 = document.querySelector("#app1");
 let index = 1
 
 const next = function () {
@@ -7,6 +7,12 @@ const next = function () {
 
 const prev = function () {
   showImage(index -= 1)
+}
+
+const auto = function () {
+  setInterval(() => {
+    showImage(index++)
+  }, 2000)
 }
 
 const showImage = function () {
@@ -19,6 +25,7 @@ const showImage = function () {
       <div>
         <button id="next">Next</button>
         <button id="prev">Prev</button>
+        <button id="auto">Auto</button>
       </div>
     </div>
   `;
@@ -27,6 +34,7 @@ const showImage = function () {
   const slides = document.querySelectorAll(".slides")
   const nextBtn = document.querySelector("#next")
   const prevBtn = document.querySelector("#prev")
+  const autoBtn = document.querySelector("#auto")
   // Logic
   if (index > slides.length) {
     index = 1
@@ -37,6 +45,7 @@ const showImage = function () {
   // Event
   nextBtn.addEventListener('click', next)
   prevBtn.addEventListener('click', prev)
+  autoBtn.addEventListener('click', auto)
 };
 
-showImage(index);
+showImage()
